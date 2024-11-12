@@ -5,4 +5,4 @@ Not a many plugins due to the productivity first mentality and NvChad also has a
 # Don't forget
 `:Lazy sync`
 
-`:Mason` -> `/rust-analyzer`, `/lua-language-server`
+`:Mason` -> `/rust-analyzer`, `/lua-language-server`...
