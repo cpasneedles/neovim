@@ -4,7 +4,7 @@ require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require "lspconfig"
 
 -- EXAMPLE
-local servers = { "html", "cssls" }
+local servers = { "rust_analyzer" }
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
@@ -14,6 +14,7 @@ for _, lsp in ipairs(servers) do
     on_init = nvlsp.on_init,
     capabilities = nvlsp.capabilities,
   }
+  vim.lsp.inlay_hint.enable()
 end
 
 -- configuring single server, example: typescript
